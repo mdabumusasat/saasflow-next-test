@@ -1,0 +1,24 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+:root {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  --theme-color1: #FFBE3B;
+  --theme-color2: #1A1818;
+  --theme-color3: #00DD81;
+  --theme-color4: #090401;
+  --theme-color1-rgb: 255, 190, 59;
+  --theme-color2-rgb: 26, 24, 24;
+  --theme-color3-rgb: 0, 221, 129;
+  --theme-color4-rgb: 9, 4, 1;
+  --theme-color1-text-color: #111111;
+  --body-bg: #090401;
+  --gradient-1: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  --gradient-2: linear-gradient(180deg, rgba(255, 255, 255, 0) -18.37%, rgba(10, 21, 123, 0.2) 100.26%);
+  --headings-color: #FFFFFF;
+  --text-color: rgba(255, 255, 255, 0.65);
+}

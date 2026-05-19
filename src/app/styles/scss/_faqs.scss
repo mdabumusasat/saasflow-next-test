@@ -1,0 +1,126 @@
+/*** 
+
+====================================================================
+    FAQ's Section
+====================================================================
+
+***/
+.faqs-section {
+  position: relative;
+  padding: 120px 0;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .shape1 {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: -600px;
+    z-index: -1;
+  }
+  .shape2 {
+    position: absolute;
+    pointer-events: none;
+    left: -120px;
+    bottom: -30px;
+    z-index: -1;
+  }
+  .outer-box{
+    background-color: var(--theme-color-white);
+    padding: 50px 60px;
+    border-radius: 10px;
+    box-shadow: 10px 4px 60px 0px #A9FF9B26;
+    position: relative;
+    @include media-breakpoint-down(md){
+      padding: 40px 30px;
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    FAQ's Section Layout 2
+====================================================================
+
+***/
+.faqs-section-layout2 {
+  padding: 120px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .outer-box {
+    background: linear-gradient(180deg, #EDEFFF 0%, rgba(237, 239, 255, 0) 100%);
+    border: 1px solid rgba(0, 3, 28, 0.1);
+    border-radius: 20px;
+    padding: 100px 15px;
+    @include media-breakpoint-down(lg){
+      padding: 60px 15px;
+    }
+  }
+  .accordion-outer {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+  .shape-1 {
+    position: absolute;
+    pointer-events: none;
+    bottom: 0;
+    left: 0;
+    @include media-breakpoint-down(xl){
+      display: none;
+    }
+  }
+  .shape-2 {
+    position: absolute;
+    pointer-events: none;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+    @include media-breakpoint-down(xl){
+      display: none;
+    }
+  }
+}
+/*** 
+
+====================================================================
+    FAQ's Section Layout 3
+====================================================================
+
+***/
+.faqs-outer-box-layout3 {
+  position: relative;
+  padding: 120px 0;
+  background-color: var(--theme-color-white);
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+.faqs-section-layout3 {
+  position: relative;
+  padding: 120px 0;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}
+
+
+/*** 
+
+====================================================================
+    FAQ's Section Layout 4
+====================================================================
+
+***/
+.faqs-section-layout4 {
+  position: relative;
+  padding: 120px 0;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+}

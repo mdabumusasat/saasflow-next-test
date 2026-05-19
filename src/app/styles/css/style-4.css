@@ -1,0 +1,26 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+body.cyan-mode {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  --theme-color1: #4F60FA;
+  --theme-color2: #0A1135;
+  --theme-color3: #FF0A8D;
+  --theme-color4: #E5E7FE;
+  --theme-color5: #00031C;
+  --theme-color1-rgb: 79, 96, 250;
+  --theme-color2-rgb: 10, 17, 53;
+  --theme-color3-rgb: 255, 10, 141;
+  --theme-color4-rgb: 229, 231, 254;
+  --theme-color5-rgb: 0, 3, 28;
+  --theme-color-dark: #11121B;
+  --theme-color1-text-color: #ffffff;
+  --body-bg: #F4F3FA;
+  --gradient-1: linear-gradient(180deg, rgba(255, 240, 232, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  --gradient-2: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  --headings-color: #0A1135;
+}

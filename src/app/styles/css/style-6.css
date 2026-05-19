@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+:root {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  --theme-color1: #005DFF;
+  --theme-color2: #7214FF;
+  --theme-color3: #0E0B3D;
+  --theme-color4: #E5E7FE;
+  --theme-color1-rgb: 0, 93, 255;
+  --theme-color2-rgb: 114, 20, 255;
+  --theme-color3-rgb: 14, 11, 61;
+  --theme-color4-rgb: 229, 231, 254;
+  --theme-color1-text-color: #ffffff;
+  --body-font-family: 'Manrope', sans-serif;
+  --heading-font-family: 'Manrope', sans-serif;
+  --body-bg: #ffffff;
+  --gradient-1: linear-gradient(180deg, #F0F6FF 0%, #F7FCFC 100%);
+  --gradient-2: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  --headings-color: #0E0B3D;
+  --text-color: #626081;
+}

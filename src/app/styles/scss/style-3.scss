@@ -1,0 +1,58 @@
+//Root 
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+
+//main theme colors
+$theme-color1: #14B8A6;
+$theme-color2: #111827;
+$theme-color3: #F04F39;
+$theme-color4: #8514FF;
+
+body.green-mode {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  
+  //theme color
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+  --theme-color4: #{$theme-color4};
+
+  //rgb version of those theme colors
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+  --theme-color3-rgb: #{hexToRGB($theme-color3)};
+  --theme-color4-rgb: #{hexToRGB($theme-color4)};
+
+  --theme-color1-text-color: #ffffff;
+
+  --theme-color-dark:  #00031C;
+
+  --h1-font-size: 60px;
+  
+  //body
+  --body-bg:          #F3F4F6;
+
+  //Gradients
+  --gradient-1: linear-gradient(180deg, rgba(255, 240, 232, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  --gradient-2: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+
+  --headings-color:     #111827;
+  --text-color:         #626081;
+
+
+
+  //container
+  --container-width: 1320px;
+  --large-container-width: 1788px;
+}
+.line-shape-animation{
+  max-width: 1778px;
+}

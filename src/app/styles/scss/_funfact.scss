@@ -1,0 +1,284 @@
+/*** 
+
+====================================================================
+    FunFact Block
+====================================================================
+
+***/
+.funfact-section {
+  padding: 120px 0;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 80px 0;
+  }
+  .sec-title {
+    margin-bottom: 70px;
+    .title {
+      line-height: 55px;
+      @include media-breakpoint-down(sm){
+        line-height: 39px;
+      }
+    }
+    .text {
+      font-size: 18px;
+      margin-top: 17px;
+    }
+  }
+  .outer-box {
+    background: var(--gradient-1);
+    border: 1px solid #EFE5DF;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    position: relative;
+    @include media-breakpoint-down(xl){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .shape-1 {
+      position: absolute;
+      bottom: -89px;
+      left: -93px;
+      z-index: -1;
+    }
+    .shape-2 {
+      position: absolute;
+      top: -80px;
+      right: -94px;
+      z-index: -1;
+    }
+  }
+}
+
+.funfact-box {
+  max-width: 321px;
+  width: 100%;
+  &:last-child {
+    .inner-box {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .inner-box {
+    position: relative;
+    padding: 44px 60px;
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: var(--gradient-2);
+      @include media-breakpoint-down(xl){
+        display: none;
+      }
+    }
+    &:hover {
+      .icon {
+        i,img {
+          transform: rotateY(360deg);
+        }
+      }
+    }
+  }
+  .icon {
+    margin-bottom: 42px;
+    display: block;
+    i,img {
+      color: var(--theme-color1);
+      font-size: 30px;
+      line-height: 1;
+      @include transition(all 900ms ease);
+    }
+  }
+  .count-box {
+    color: var(--headings-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  .text {
+    margin-top: 7px;
+  }
+}
+
+/*** 
+
+====================================================================
+    FunFact Section Layout 3
+====================================================================
+
+***/
+.funfact-section-layout3 {
+  position: relative;
+  padding: 120px 0 220px;
+  background-color: var(--theme-color-black);
+  border-bottom: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+  @include media-breakpoint-down(lg){
+    padding: 80px 0 120px;
+  }
+  .shape-1 {
+    right: -99px;
+    top: -110px;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .shape-2 {
+    left: 0;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .shape-3 {
+    right: 0;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .shape-4 {
+    left: 0;
+    top: -100px;
+    position: absolute;
+    pointer-events: none;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .shape-5 {
+    right: 0;
+    top: 0;
+    position: absolute;
+    pointer-events: none;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .sec-title {
+    margin-bottom: 160px;
+    @include media-breakpoint-down(sm){
+      margin-bottom: 50px;
+    }
+    .text {
+      color: rgba(var(--theme-color-white-rgb), 0.65);
+    }
+  }
+  .funfact-outer {
+    max-width: 1067px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .funfact-image1 {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+  }
+  .funfact-image2 {
+    position: absolute;
+    right: 0;
+    top: -95px;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+  }
+}
+.counter-block-layout3 {
+  .inner-block {
+    background-color: var(--theme-color1);
+    border-radius: 50%;
+    backdrop-filter: blur(60px);
+    box-shadow: 0 0px 60px 15px #14b8a6b0;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    @include media-breakpoint-down(sm){
+      width: 200px;
+      height: 200px;
+      padding-bottom: 24px;
+    }
+  }
+  .count-box {
+    color: var(--theme-color1-text-color);
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 10px;
+    @include media-breakpoint-down(sm){
+      margin-bottom: 0;
+      font-size: 35px;
+    }
+    .count-text {
+      font-size: 80px;
+      font-weight: 600;
+      top: -5px;
+      position: relative;
+      @include media-breakpoint-down(sm){
+        font-size: 50px;
+        top: 0;
+      }
+    }
+  }
+  .title {
+    color: var(--theme-color1-text-color);
+    margin-bottom: 0;
+  }
+}
+
+/*** 
+
+====================================================================
+    FunFact Block Layout 3
+====================================================================
+
+***/
+.counter-block-layout7 {
+  .inner-block {
+    position: relative;
+    border: 1px solid rgba(var(--theme-color-white-rgb), 0.1);
+    border-radius: 30px;
+    padding: 40px 40px 32px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 21, 123, 0.2) 100.26%);
+    @include transition(all 300ms ease);
+    &:hover {
+      border-color: var(--theme-color1);
+      i,img {
+        transform: rotateY(360deg);
+      }
+    }
+  }
+  .icon {
+    margin-bottom: 36px;
+    i,img {
+      color: var(--theme-color1);
+      font-size: 30px;
+      line-height: 1;
+      @include transition(all 900ms ease);
+    }
+  }
+  .count-box {
+    margin-bottom: 3px;
+  }
+  .text {}
+}
