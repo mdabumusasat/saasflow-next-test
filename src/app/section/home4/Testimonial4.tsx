@@ -4,7 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-const testimonials = [
+type Testimonial = {
+  name: string;
+  designation: string;
+  image: string;
+  text: string;
+  quote: string;
+};
+
+const testimonials: Testimonial[] = [
   {
     name: "Foliumin Walker",
     designation: "Head of Operations at Summit Global",
@@ -42,7 +50,7 @@ const testimonials = [
   },
 ];
 
-function TestimonialCard({ item }) {
+function TestimonialCard({ item }: { item: Testimonial }) {
   return (
     <div className="testimonial-block-layout4">
       <div className="inner-block">
