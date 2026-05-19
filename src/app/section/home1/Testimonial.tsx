@@ -64,7 +64,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-function TestimonialCard({ item }) {
+function TestimonialCard({ item }: { item: Testimonial }) {
   return (
     <div className="testimonial-block">
       <div className="inner-block">
@@ -77,7 +77,7 @@ function TestimonialCard({ item }) {
           </div>
           <div className="author-info">
             <div className="h6 name">{item.name},</div>
-            <div className="designation">{item.designation}</div>
+            <div className="designation">{item.role}</div>
           </div>
         </div>
         <div className="text">{item.text}</div>
