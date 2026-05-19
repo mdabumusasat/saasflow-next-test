@@ -30,10 +30,10 @@ const faqs = [
 ];
 
 const FaqSectionLayout3 = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? -1 : index);
+  const toggleFAQ = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
