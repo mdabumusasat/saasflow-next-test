@@ -31,9 +31,9 @@ const faqs = [
 ];
 
 export default function FaqSectionLayout4() {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
