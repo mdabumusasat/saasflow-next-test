@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 interface ProgressBar2Props {
+  title?: string;
   targetPercentage: number;
 }
 
-const ProgressBar2 = ({ targetPercentage }: ProgressBar2Props) => {
+const ProgressBar2 = ({ title, targetPercentage }: ProgressBar2Props) => {
     const [percentage, setPercentage] = useState(0);
     const animationDuration = 3000;
 
@@ -25,7 +26,7 @@ const ProgressBar2 = ({ targetPercentage }: ProgressBar2Props) => {
     }, [targetPercentage, animationDuration]);
 
     return (
-            <div className="bar">
+            <div className="bar" aria-label={title ?? undefined}>
               <div className="bar-inner counted" style={{ width: `${percentage}%` }}>
                 <div className="count-text">{percentage}%</div>
               </div>
